@@ -2,7 +2,7 @@
 
 This is just a very basic tool for creating mongo migration scripts.
 
-Usage if fairly simple, just:
+Usage is fairly simple, just:
 
 ```
 python migrate.py create Brief Description Here
@@ -39,6 +39,8 @@ You can put whatever utility functions you wish in here. I've included a functio
 
 The tool keeps track of which migrations have been ran using a special database 'dev_db'.
 If you want to change this, just edit the code, perhaps in future i'll add a flag for `update` to change this.
+
+Also, this assumes all files are in the same directory, so if you want to add other non-related files, they'll need to be added to the list of ignored files. See the `get_files` function in `migrate.py`.
 
 ### Dependencies:
 
