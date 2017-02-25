@@ -59,7 +59,7 @@ def file_time(filename):
 	return filename.split('-')[-1][0:-3]
 
 def get_files(timestamp):
-	files = [i for i in os.listdir('.') if i not in [os.path.basename(__file__), "include.js", 'venv', 'README.md', 'LICENSE']
+	files = [i for i in os.listdir('.') if i not in [os.path.basename(__file__), "include.js", 'venv', 'README.md', 'LICENSE', 'requirements.txt']
 		and int(file_time(i)) > timestamp]
 	files.sort(key=file_time)
 	return files
