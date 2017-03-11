@@ -39,7 +39,7 @@ new_file_setup = '//Created at: {0}\n' \
 	'print("Running migration: {1}");\n\n' \
 	'load("include.js");\n\n' \
 	'//connection stored in variable "conn"' \
-	'var db = conn.getDB("LifeTree");\n'
+	'var db = conn.getDB("Example_DB_here");\n'
 
 def create(args):
 	print('Creating migration file...')
